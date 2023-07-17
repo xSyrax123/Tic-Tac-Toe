@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+
+    <div class="game">
+      <header>
+        <div class="game-letters">
+          <span class="x-letter">X</span>
+          <span class="o-letter">O</span>
+        </div>
+
+        <button class="btn new-game-button hidden" id="new-game-button">New game</button>
+      </header>
+
+      <table id="board">
+        <tbody>
+          <tr>
+            <td data-index="0"><span></span><div></div></td>
+            <td data-index="1"><span></span><div></div></td>
+            <td data-index="2"><span></span><div></div></td>
+          </tr>
+          <tr>
+            <td data-index="3"><span></span><div></div></td>
+            <td data-index="4"><span></span><div></div></td>
+            <td data-index="5"><span></span><div></div></td>
+          </tr>
+          <tr>
+            <td data-index="6"><span></span><div></div></td>
+            <td data-index="7"><span></span><div></div></td>
+            <td data-index="8"><span></span><div></div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="scores">
+        <p class="player">X PLAYER <span class="score" id="player-score">0</span></p>
+        <p class="ties">TIES <span class="score" id="ties-score">0</span></p>
+        <p class="computer">O COMPUTER <span class="score" id="computer-score">0</span></p>
+      </div>
+    </div>
+  </body>
+</html>
